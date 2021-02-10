@@ -42,7 +42,7 @@ class AddBookmark extends Component {
     e.preventDefault();
     const { title, url, description, rating } = this.state;
     const bookmark = { title, url, description, rating };
-    const url = "https://tf-ed-bookmarks-api.herokuapp.com/v3/bookmarks";
+
     const options = {
       method: "POST",
       body: JSON.stringify(bookmark),
